@@ -1,0 +1,28 @@
+﻿<doc>
+	<brackets left="(" right=")" />
+	<brackets left="[" right="]" />
+	<brackets left="{" right="}" />
+
+	<style name="Maroon" color="Maroon"/>
+	<style name="Blue" color="Blue"/>
+	<style name="Red" color="Red" backColor="#f5f5e5" />
+	<style name="Green" color="Green" />
+	<style name="Violet" color="Violet" />
+	<style name="Purple" color="Purple" />
+	<style name="ActiveCaption" color="#2b91af" />
+	<style name="DarkRed" color="#8c0000" />
+	<style name="Magenta" color="#ff00ff" />
+	<style name="Var" color="#476400" fontStyle="Bold"/>
+
+	<rule style="Green" options="IgnoreCase">--.*</rule>	
+	<rule style="Blue" options="IgnoreCase">\b(action|add|all|alter|and|any|as|asc|authorization|avg|backup|begin|between|break|browse|bulk|by|cascade|case|check|checkpoint|close|clustered|coalesce|collate|column|commit|committed|compute|confirm|constraint|contains|containstable|continue|controlrow|convert|count|create|cross|current|current_date|current_time|current_timestamp|current_user|cursor|database|dbcc|deallocate|declare|default|delete|deny|desc|disable|disk|distinct|distributed|double|drop|dummy|dump|else|enable|end|errlvl|errorexit|escape|except|exec|execute|exists|exit|fetch|file|fillfactor|floppy|for|foreign|forward_only|freetext|freetexttable|from|full|function|goto|grant|group|having|holdlock|identity|identity_insert|identitycol|if|in|index|inner|insert|intersect|into|is|isolation|join|key|kill|left|level|like|lineno|load|mirrorexit|move|national|no|nocheck|nonclustered|not|nounload|null|nullif|of|off|offsets|on|once|only|open|opendatasource|openquery|openrowset|option|or|order|outer|over|percent|perm|permanent|pipe|plan|precision|prepare|primary|print|privileges|proc|procedure|processexit|public|raiserror|read|readtext|read_only|reconfigure|recovery|references|repeatable|replication|restore|restrict|return|returns|revoke|right|rollback|rowcount|rowguidcol|rule|save|schema|select|serializable|session_user|set|setuser|shutdown|some|statistics|stats|system_user|table|tape|temp|temporary|textsize|then|to|top|tran|transaction|trigger|truncate|tsequal|uncommitted|union|unique|update|updatetext|use|user|values|varying|view|waitfor|when|where|while|with|work|writetext|nocount)\b</rule>
+	<rule style="Purple">\b([0-9]+)\b</rule>
+	<rule style="ActiveCaption" options="IgnoreCase">\b(bigint|binary|bit|char|character|datetime|dec|decimal|float|image|int|integer|money|nchar|ntext|numeric|nvarchar|real|smalldatetime|smallint|smallmoney|sql_variant|sysname|text|timestamp|tinyint|uniqueidentifier|varbinary|varchar)\b</rule>
+	<rule style="DarkRed" options="IgnoreCase">\b(deleted|inserted)\b</rule>
+	<rule style="DarkRed" options="IgnoreCase">\b(abs|acos|app_name|ascii|asin|atan|atn2|avg|binary_checksum|case|cast|ceiling|charindex|checksum|checksum_agg|coalesce|collationproperty|col_length|col_name|columns_updated|columnproperty|convert|cos|cot|count|count_big|current_timestamp|current_user|cursor_status|databaseproperty|databasepropertyex|datalength|dateadd|datediff|datename|datepart|day|db_id|db_name|degrees|difference|exp|file_id|file_name|filegroup_id|filegroup_name|filegroupproperty|fileproperty|floor|fn_helpcollations|fn_listextendedproperty|fn_servershareddrives|fn_trace_geteventinfo|fn_trace_getfilterinfo|fn_trace_getinfo|fn_trace_gettable|fn_virtualfilestats|formatmessage|fulltextcatalogproperty|fulltextserviceproperty|getansinull|getdate|getutcdate|grouping|has_dbaccess|host_id|host_name|ident_current|ident_incr|ident_seed|index_col|indexkey_property|indexproperty|is_member|is_srvrolemember|isdate|isnull|isnumeric|left|len|log|log10|lower|ltrim|max|min|month|newid|nullif|object_id|object_name|objectproperty|parsename|patindex|permissions|pi|power|quotename|radians|rand|replace|replicate|reverse|right|round|rowcount_big|rtrim|scope_identity|serverproperty|sessionproperty|session_user|sign|sin|soundex|space|sqare|sql_variant_property|sqrt|stats_date|stdev|stdevp|str|stuff|substring|sum|suser_sid|suser_sname|system_user|tan|typeproperty|unicode|upper|user_id|user_name|var|varp|year)\b</rule>
+	<rule style="Var">\b(:[a-zA-Z_][a-zA-Z_0-9])\b*</rule>
+	<rule style="Red">("")|"((((\\")|("")|[^"])*")|(((\\")|("")|[^"])*))</rule>
+	<rule style="Red">('')|'((((\\')|('')|[^'])*')|(((\\')|('')|[^'])*))</rule>
+
+	<folding start="begin" finish="end" options="IgnoreCase"/>
+</doc>
